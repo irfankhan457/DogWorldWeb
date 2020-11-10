@@ -1,3 +1,21 @@
+@font-face{
+  font-family: montes-bold;
+  src: url('../font/Montserrat/Montserrat-Bold.ttf');
+}
+
+@font-face{
+  font-family: montes-ebold;
+  src: url('../font/Montserrat/Montserrat-ExtraBold.ttf');
+}
+@font-face{
+  font-family: montes-italic;
+  src: url('../font/Montserrat/Montserrat-SemiBoldItalic.ttf');
+}
+
+@font-face{
+  font-family: montes-light;
+  src: url('../font/Montserrat/Montserrat-Light.ttf');
+}
 body {
   font-family: 'Montserrat';
 }
@@ -14,9 +32,15 @@ body {
 
 
 h1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'montes-ebold', sans-serif;
   font-size: 3.5rem;
   line-height: 1.5;
+}
+h3 {
+  font-family: "montes-bold";
+}
+p {
+  color: #8f8f8f;
 }
 
 div.a {
@@ -44,7 +68,7 @@ div.a {
 
 .nav-link {
   font-size: 1.2rem;
-  font-family: "Montserrat-Light";
+  font-family: "montes-light";
 }
 
  /* Download Button */
@@ -57,4 +81,20 @@ div.a {
 .title-image {
   width: 60%;
   transform: rotate(25deg);
+}
+
+#features {
+  padding: 7% 10%;
+}
+
+.feature-box {
+  text-align: center;
+}
+.icon {
+  color: #ef8172;
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  color: #ff4c68;
 }
