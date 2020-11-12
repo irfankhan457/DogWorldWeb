@@ -20,6 +20,23 @@ body {
   font-family: 'Montserrat';
 }
 
+h1 {
+  font-family: 'montes-ebold', sans-serif;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+h2 {
+  font-family: "montes-bold";
+  font-size: 3rem;
+  line-height: 1.5;
+}
+h3 {
+  font-family: "montes-bold";
+}
+p {
+  color: #8f8f8f;
+}
+
 #title {
   background-color: #ff6754;
   color: #fff;
@@ -31,17 +48,7 @@ body {
 
 
 
-h1 {
-  font-family: 'montes-ebold', sans-serif;
-  font-size: 3.5rem;
-  line-height: 1.5;
-}
-h3 {
-  font-family: "montes-bold";
-}
-p {
-  color: #8f8f8f;
-}
+
 
 div.a {
   margin-top: 25px;
@@ -81,10 +88,15 @@ div.a {
 .title-image {
   width: 60%;
   transform: rotate(25deg);
+  position: absolute;
 }
 
+/* Feature section styling */ 
 #features {
   padding: 7% 10%;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
 }
 
 .feature-box {
@@ -98,3 +110,79 @@ div.a {
 .icon:hover {
   color: #ff4c68;
 }
+
+/* Testimonials Section styling */
+#testimonials {
+  text-align: center;
+  background-color: #ff6754;
+  color: #fff;
+}
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+.carousel-item {
+  padding: 7% 15%;
+}
+
+/* Press Section styling  */
+#press {
+  background-color: #ff6754;
+  text-align: center;
+  padding-bottom: 4%;
+}
+
+.press-Logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+.carousel-item {
+  height: 500px;
+}
+
+/* pricing section styling */
+#pricing {
+  padding: 100px;
+  text-align: center;
+}
+.pricing-column {
+  padding: 3% 2%;
+}
+
+
+/* Call to Action  */
+
+#cta {
+  background-color: #ff6754;
+  padding: 7% 15%;
+  color: #fff;
+  text-align: center;
+}
+
+.cta-header {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.5;
+  font-family: 'montes-ebold', sans-serif;
+}
+
+/* Footer section style */
+#footer {
+  text-align: center;
+}
+
+.social-icn {
+  margin: 20px 10px;
+}
+
+
+@media(max-width: 1028px) {
+  .title-image {
+    position: static;
+    transform: rotate(25deg);
+  }
+}
+
